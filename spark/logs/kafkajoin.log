@@ -1,0 +1,826 @@
+:: loading settings :: url = jar:file:/opt/bitnami/spark/jars/ivy-2.4.0.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /opt/bitnami/spark/.ivy2/cache
+The jars for the packages stored in: /opt/bitnami/spark/.ivy2/jars
+org.apache.spark#spark-sql-kafka-0-10_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-b27c1061-381f-4cf4-a7ba-1ec253f8eab9;1.0
+	confs: [default]
+	found org.apache.spark#spark-sql-kafka-0-10_2.12;3.1.1 in central
+	found org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.1.1 in central
+	found org.apache.kafka#kafka-clients;2.6.0 in central
+	found com.github.luben#zstd-jni;1.4.8-1 in central
+	found org.lz4#lz4-java;1.7.1 in central
+	found org.xerial.snappy#snappy-java;1.1.8.2 in central
+	found org.slf4j#slf4j-api;1.7.30 in central
+	found org.spark-project.spark#unused;1.0.0 in central
+	found org.apache.commons#commons-pool2;2.6.2 in central
+:: resolution report :: resolve 1124ms :: artifacts dl 198ms
+	:: modules in use:
+	com.github.luben#zstd-jni;1.4.8-1 from central in [default]
+	org.apache.commons#commons-pool2;2.6.2 from central in [default]
+	org.apache.kafka#kafka-clients;2.6.0 from central in [default]
+	org.apache.spark#spark-sql-kafka-0-10_2.12;3.1.1 from central in [default]
+	org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.1.1 from central in [default]
+	org.lz4#lz4-java;1.7.1 from central in [default]
+	org.slf4j#slf4j-api;1.7.30 from central in [default]
+	org.spark-project.spark#unused;1.0.0 from central in [default]
+	org.xerial.snappy#snappy-java;1.1.8.2 from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   9   |   0   |   0   |   0   ||   9   |   0   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-b27c1061-381f-4cf4-a7ba-1ec253f8eab9
+	confs: [default]
+	0 artifacts copied, 9 already retrieved (0kB/90ms)
+21/09/25 02:07:08 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+21/09/25 02:07:10 INFO SparkContext: Running Spark version 3.1.2
+21/09/25 02:07:10 INFO ResourceUtils: ==============================================================
+21/09/25 02:07:10 INFO ResourceUtils: No custom resources configured for spark.driver.
+21/09/25 02:07:10 INFO ResourceUtils: ==============================================================
+21/09/25 02:07:10 INFO SparkContext: Submitted application: KafkaJoin
+21/09/25 02:07:10 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+21/09/25 02:07:10 INFO ResourceProfile: Limiting resource is cpu
+21/09/25 02:07:10 INFO ResourceProfileManager: Added ResourceProfile id: 0
+21/09/25 02:07:10 INFO SecurityManager: Changing view acls to: spark
+21/09/25 02:07:10 INFO SecurityManager: Changing modify acls to: spark
+21/09/25 02:07:10 INFO SecurityManager: Changing view acls groups to: 
+21/09/25 02:07:10 INFO SecurityManager: Changing modify acls groups to: 
+21/09/25 02:07:10 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(spark); groups with view permissions: Set(); users  with modify permissions: Set(spark); groups with modify permissions: Set()
+21/09/25 02:07:10 INFO Utils: Successfully started service 'sparkDriver' on port 37001.
+21/09/25 02:07:10 INFO SparkEnv: Registering MapOutputTracker
+21/09/25 02:07:10 INFO SparkEnv: Registering BlockManagerMaster
+21/09/25 02:07:10 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+21/09/25 02:07:10 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+21/09/25 02:07:10 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+21/09/25 02:07:10 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-e5c9d001-4871-4baa-8925-40045cc4d9bb
+21/09/25 02:07:10 INFO MemoryStore: MemoryStore started with capacity 366.3 MiB
+21/09/25 02:07:10 INFO SparkEnv: Registering OutputCommitCoordinator
+21/09/25 02:07:10 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+21/09/25 02:07:10 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://3790af8b1f92:4040
+21/09/25 02:07:10 INFO SparkContext: Added JAR file:///opt/bitnami/spark/.ivy2/jars/org.apache.spark_spark-sql-kafka-0-10_2.12-3.1.1.jar at spark://3790af8b1f92:37001/jars/org.apache.spark_spark-sql-kafka-0-10_2.12-3.1.1.jar with timestamp 1632535629992
+21/09/25 02:07:10 INFO SparkContext: Added JAR file:///opt/bitnami/spark/.ivy2/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.1.1.jar at spark://3790af8b1f92:37001/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.1.1.jar with timestamp 1632535629992
+21/09/25 02:07:10 INFO SparkContext: Added JAR file:///opt/bitnami/spark/.ivy2/jars/org.apache.kafka_kafka-clients-2.6.0.jar at spark://3790af8b1f92:37001/jars/org.apache.kafka_kafka-clients-2.6.0.jar with timestamp 1632535629992
+21/09/25 02:07:10 INFO SparkContext: Added JAR file:///opt/bitnami/spark/.ivy2/jars/org.apache.commons_commons-pool2-2.6.2.jar at spark://3790af8b1f92:37001/jars/org.apache.commons_commons-pool2-2.6.2.jar with timestamp 1632535629992
+21/09/25 02:07:10 INFO SparkContext: Added JAR file:///opt/bitnami/spark/.ivy2/jars/org.spark-project.spark_unused-1.0.0.jar at spark://3790af8b1f92:37001/jars/org.spark-project.spark_unused-1.0.0.jar with timestamp 1632535629992
+21/09/25 02:07:10 INFO SparkContext: Added JAR file:///opt/bitnami/spark/.ivy2/jars/com.github.luben_zstd-jni-1.4.8-1.jar at spark://3790af8b1f92:37001/jars/com.github.luben_zstd-jni-1.4.8-1.jar with timestamp 1632535629992
+21/09/25 02:07:10 INFO SparkContext: Added JAR file:///opt/bitnami/spark/.ivy2/jars/org.lz4_lz4-java-1.7.1.jar at spark://3790af8b1f92:37001/jars/org.lz4_lz4-java-1.7.1.jar with timestamp 1632535629992
+21/09/25 02:07:10 INFO SparkContext: Added JAR file:///opt/bitnami/spark/.ivy2/jars/org.xerial.snappy_snappy-java-1.1.8.2.jar at spark://3790af8b1f92:37001/jars/org.xerial.snappy_snappy-java-1.1.8.2.jar with timestamp 1632535629992
+21/09/25 02:07:10 INFO SparkContext: Added JAR file:///opt/bitnami/spark/.ivy2/jars/org.slf4j_slf4j-api-1.7.30.jar at spark://3790af8b1f92:37001/jars/org.slf4j_slf4j-api-1.7.30.jar with timestamp 1632535629992
+21/09/25 02:07:10 INFO SparkContext: Added file file:///opt/bitnami/spark/.ivy2/jars/org.apache.spark_spark-sql-kafka-0-10_2.12-3.1.1.jar at file:///opt/bitnami/spark/.ivy2/jars/org.apache.spark_spark-sql-kafka-0-10_2.12-3.1.1.jar with timestamp 1632535629992
+21/09/25 02:07:10 INFO Utils: Copying /opt/bitnami/spark/.ivy2/jars/org.apache.spark_spark-sql-kafka-0-10_2.12-3.1.1.jar to /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/org.apache.spark_spark-sql-kafka-0-10_2.12-3.1.1.jar
+21/09/25 02:07:10 INFO SparkContext: Added file file:///opt/bitnami/spark/.ivy2/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.1.1.jar at file:///opt/bitnami/spark/.ivy2/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.1.1.jar with timestamp 1632535629992
+21/09/25 02:07:10 INFO Utils: Copying /opt/bitnami/spark/.ivy2/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.1.1.jar to /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.1.1.jar
+21/09/25 02:07:10 INFO SparkContext: Added file file:///opt/bitnami/spark/.ivy2/jars/org.apache.kafka_kafka-clients-2.6.0.jar at file:///opt/bitnami/spark/.ivy2/jars/org.apache.kafka_kafka-clients-2.6.0.jar with timestamp 1632535629992
+21/09/25 02:07:10 INFO Utils: Copying /opt/bitnami/spark/.ivy2/jars/org.apache.kafka_kafka-clients-2.6.0.jar to /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/org.apache.kafka_kafka-clients-2.6.0.jar
+21/09/25 02:07:11 INFO SparkContext: Added file file:///opt/bitnami/spark/.ivy2/jars/org.apache.commons_commons-pool2-2.6.2.jar at file:///opt/bitnami/spark/.ivy2/jars/org.apache.commons_commons-pool2-2.6.2.jar with timestamp 1632535629992
+21/09/25 02:07:11 INFO Utils: Copying /opt/bitnami/spark/.ivy2/jars/org.apache.commons_commons-pool2-2.6.2.jar to /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/org.apache.commons_commons-pool2-2.6.2.jar
+21/09/25 02:07:11 INFO SparkContext: Added file file:///opt/bitnami/spark/.ivy2/jars/org.spark-project.spark_unused-1.0.0.jar at file:///opt/bitnami/spark/.ivy2/jars/org.spark-project.spark_unused-1.0.0.jar with timestamp 1632535629992
+21/09/25 02:07:11 INFO Utils: Copying /opt/bitnami/spark/.ivy2/jars/org.spark-project.spark_unused-1.0.0.jar to /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/org.spark-project.spark_unused-1.0.0.jar
+21/09/25 02:07:11 INFO SparkContext: Added file file:///opt/bitnami/spark/.ivy2/jars/com.github.luben_zstd-jni-1.4.8-1.jar at file:///opt/bitnami/spark/.ivy2/jars/com.github.luben_zstd-jni-1.4.8-1.jar with timestamp 1632535629992
+21/09/25 02:07:11 INFO Utils: Copying /opt/bitnami/spark/.ivy2/jars/com.github.luben_zstd-jni-1.4.8-1.jar to /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/com.github.luben_zstd-jni-1.4.8-1.jar
+21/09/25 02:07:11 INFO SparkContext: Added file file:///opt/bitnami/spark/.ivy2/jars/org.lz4_lz4-java-1.7.1.jar at file:///opt/bitnami/spark/.ivy2/jars/org.lz4_lz4-java-1.7.1.jar with timestamp 1632535629992
+21/09/25 02:07:11 INFO Utils: Copying /opt/bitnami/spark/.ivy2/jars/org.lz4_lz4-java-1.7.1.jar to /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/org.lz4_lz4-java-1.7.1.jar
+21/09/25 02:07:11 INFO SparkContext: Added file file:///opt/bitnami/spark/.ivy2/jars/org.xerial.snappy_snappy-java-1.1.8.2.jar at file:///opt/bitnami/spark/.ivy2/jars/org.xerial.snappy_snappy-java-1.1.8.2.jar with timestamp 1632535629992
+21/09/25 02:07:11 INFO Utils: Copying /opt/bitnami/spark/.ivy2/jars/org.xerial.snappy_snappy-java-1.1.8.2.jar to /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/org.xerial.snappy_snappy-java-1.1.8.2.jar
+21/09/25 02:07:11 INFO SparkContext: Added file file:///opt/bitnami/spark/.ivy2/jars/org.slf4j_slf4j-api-1.7.30.jar at file:///opt/bitnami/spark/.ivy2/jars/org.slf4j_slf4j-api-1.7.30.jar with timestamp 1632535629992
+21/09/25 02:07:11 INFO Utils: Copying /opt/bitnami/spark/.ivy2/jars/org.slf4j_slf4j-api-1.7.30.jar to /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/org.slf4j_slf4j-api-1.7.30.jar
+21/09/25 02:07:11 INFO Executor: Starting executor ID driver on host 3790af8b1f92
+21/09/25 02:07:11 INFO Executor: Fetching file:///opt/bitnami/spark/.ivy2/jars/org.xerial.snappy_snappy-java-1.1.8.2.jar with timestamp 1632535629992
+21/09/25 02:07:11 INFO Utils: /opt/bitnami/spark/.ivy2/jars/org.xerial.snappy_snappy-java-1.1.8.2.jar has been previously copied to /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/org.xerial.snappy_snappy-java-1.1.8.2.jar
+21/09/25 02:07:11 INFO Executor: Fetching file:///opt/bitnami/spark/.ivy2/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.1.1.jar with timestamp 1632535629992
+21/09/25 02:07:11 INFO Utils: /opt/bitnami/spark/.ivy2/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.1.1.jar has been previously copied to /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.1.1.jar
+21/09/25 02:07:11 INFO Executor: Fetching file:///opt/bitnami/spark/.ivy2/jars/com.github.luben_zstd-jni-1.4.8-1.jar with timestamp 1632535629992
+21/09/25 02:07:11 INFO Utils: /opt/bitnami/spark/.ivy2/jars/com.github.luben_zstd-jni-1.4.8-1.jar has been previously copied to /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/com.github.luben_zstd-jni-1.4.8-1.jar
+21/09/25 02:07:11 INFO Executor: Fetching file:///opt/bitnami/spark/.ivy2/jars/org.apache.spark_spark-sql-kafka-0-10_2.12-3.1.1.jar with timestamp 1632535629992
+21/09/25 02:07:11 INFO Utils: /opt/bitnami/spark/.ivy2/jars/org.apache.spark_spark-sql-kafka-0-10_2.12-3.1.1.jar has been previously copied to /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/org.apache.spark_spark-sql-kafka-0-10_2.12-3.1.1.jar
+21/09/25 02:07:11 INFO Executor: Fetching file:///opt/bitnami/spark/.ivy2/jars/org.apache.commons_commons-pool2-2.6.2.jar with timestamp 1632535629992
+21/09/25 02:07:11 INFO Utils: /opt/bitnami/spark/.ivy2/jars/org.apache.commons_commons-pool2-2.6.2.jar has been previously copied to /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/org.apache.commons_commons-pool2-2.6.2.jar
+21/09/25 02:07:11 INFO Executor: Fetching file:///opt/bitnami/spark/.ivy2/jars/org.spark-project.spark_unused-1.0.0.jar with timestamp 1632535629992
+21/09/25 02:07:11 INFO Utils: /opt/bitnami/spark/.ivy2/jars/org.spark-project.spark_unused-1.0.0.jar has been previously copied to /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/org.spark-project.spark_unused-1.0.0.jar
+21/09/25 02:07:11 INFO Executor: Fetching file:///opt/bitnami/spark/.ivy2/jars/org.lz4_lz4-java-1.7.1.jar with timestamp 1632535629992
+21/09/25 02:07:11 INFO Utils: /opt/bitnami/spark/.ivy2/jars/org.lz4_lz4-java-1.7.1.jar has been previously copied to /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/org.lz4_lz4-java-1.7.1.jar
+21/09/25 02:07:11 INFO Executor: Fetching file:///opt/bitnami/spark/.ivy2/jars/org.apache.kafka_kafka-clients-2.6.0.jar with timestamp 1632535629992
+21/09/25 02:07:12 INFO Utils: /opt/bitnami/spark/.ivy2/jars/org.apache.kafka_kafka-clients-2.6.0.jar has been previously copied to /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/org.apache.kafka_kafka-clients-2.6.0.jar
+21/09/25 02:07:12 INFO Executor: Fetching file:///opt/bitnami/spark/.ivy2/jars/org.slf4j_slf4j-api-1.7.30.jar with timestamp 1632535629992
+21/09/25 02:07:12 INFO Utils: /opt/bitnami/spark/.ivy2/jars/org.slf4j_slf4j-api-1.7.30.jar has been previously copied to /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/org.slf4j_slf4j-api-1.7.30.jar
+21/09/25 02:07:12 INFO Executor: Fetching spark://3790af8b1f92:37001/jars/org.spark-project.spark_unused-1.0.0.jar with timestamp 1632535629992
+21/09/25 02:07:12 INFO TransportClientFactory: Successfully created connection to 3790af8b1f92/172.18.0.5:37001 after 31 ms (0 ms spent in bootstraps)
+21/09/25 02:07:12 INFO Utils: Fetching spark://3790af8b1f92:37001/jars/org.spark-project.spark_unused-1.0.0.jar to /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/fetchFileTemp4083827925904628958.tmp
+21/09/25 02:07:12 INFO Utils: /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/fetchFileTemp4083827925904628958.tmp has been previously copied to /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/org.spark-project.spark_unused-1.0.0.jar
+21/09/25 02:07:12 INFO Executor: Adding file:/tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/org.spark-project.spark_unused-1.0.0.jar to class loader
+21/09/25 02:07:12 INFO Executor: Fetching spark://3790af8b1f92:37001/jars/org.xerial.snappy_snappy-java-1.1.8.2.jar with timestamp 1632535629992
+21/09/25 02:07:12 INFO Utils: Fetching spark://3790af8b1f92:37001/jars/org.xerial.snappy_snappy-java-1.1.8.2.jar to /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/fetchFileTemp761831848367075944.tmp
+21/09/25 02:07:12 INFO Utils: /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/fetchFileTemp761831848367075944.tmp has been previously copied to /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/org.xerial.snappy_snappy-java-1.1.8.2.jar
+21/09/25 02:07:12 INFO Executor: Adding file:/tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/org.xerial.snappy_snappy-java-1.1.8.2.jar to class loader
+21/09/25 02:07:12 INFO Executor: Fetching spark://3790af8b1f92:37001/jars/org.apache.spark_spark-sql-kafka-0-10_2.12-3.1.1.jar with timestamp 1632535629992
+21/09/25 02:07:12 INFO Utils: Fetching spark://3790af8b1f92:37001/jars/org.apache.spark_spark-sql-kafka-0-10_2.12-3.1.1.jar to /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/fetchFileTemp5954851685431100708.tmp
+21/09/25 02:07:12 INFO Utils: /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/fetchFileTemp5954851685431100708.tmp has been previously copied to /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/org.apache.spark_spark-sql-kafka-0-10_2.12-3.1.1.jar
+21/09/25 02:07:12 INFO Executor: Adding file:/tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/org.apache.spark_spark-sql-kafka-0-10_2.12-3.1.1.jar to class loader
+21/09/25 02:07:12 INFO Executor: Fetching spark://3790af8b1f92:37001/jars/org.apache.commons_commons-pool2-2.6.2.jar with timestamp 1632535629992
+21/09/25 02:07:12 INFO Utils: Fetching spark://3790af8b1f92:37001/jars/org.apache.commons_commons-pool2-2.6.2.jar to /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/fetchFileTemp7097373974665378804.tmp
+21/09/25 02:07:12 INFO Utils: /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/fetchFileTemp7097373974665378804.tmp has been previously copied to /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/org.apache.commons_commons-pool2-2.6.2.jar
+21/09/25 02:07:12 INFO Executor: Adding file:/tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/org.apache.commons_commons-pool2-2.6.2.jar to class loader
+21/09/25 02:07:12 INFO Executor: Fetching spark://3790af8b1f92:37001/jars/org.slf4j_slf4j-api-1.7.30.jar with timestamp 1632535629992
+21/09/25 02:07:12 INFO Utils: Fetching spark://3790af8b1f92:37001/jars/org.slf4j_slf4j-api-1.7.30.jar to /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/fetchFileTemp5774549011583001982.tmp
+21/09/25 02:07:12 INFO Utils: /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/fetchFileTemp5774549011583001982.tmp has been previously copied to /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/org.slf4j_slf4j-api-1.7.30.jar
+21/09/25 02:07:12 INFO Executor: Adding file:/tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/org.slf4j_slf4j-api-1.7.30.jar to class loader
+21/09/25 02:07:12 INFO Executor: Fetching spark://3790af8b1f92:37001/jars/org.lz4_lz4-java-1.7.1.jar with timestamp 1632535629992
+21/09/25 02:07:12 INFO Utils: Fetching spark://3790af8b1f92:37001/jars/org.lz4_lz4-java-1.7.1.jar to /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/fetchFileTemp2667761950019932102.tmp
+21/09/25 02:07:12 INFO Utils: /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/fetchFileTemp2667761950019932102.tmp has been previously copied to /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/org.lz4_lz4-java-1.7.1.jar
+21/09/25 02:07:12 INFO Executor: Adding file:/tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/org.lz4_lz4-java-1.7.1.jar to class loader
+21/09/25 02:07:12 INFO Executor: Fetching spark://3790af8b1f92:37001/jars/com.github.luben_zstd-jni-1.4.8-1.jar with timestamp 1632535629992
+21/09/25 02:07:12 INFO Utils: Fetching spark://3790af8b1f92:37001/jars/com.github.luben_zstd-jni-1.4.8-1.jar to /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/fetchFileTemp5884800597349099618.tmp
+21/09/25 02:07:12 INFO Utils: /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/fetchFileTemp5884800597349099618.tmp has been previously copied to /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/com.github.luben_zstd-jni-1.4.8-1.jar
+21/09/25 02:07:12 INFO Executor: Adding file:/tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/com.github.luben_zstd-jni-1.4.8-1.jar to class loader
+21/09/25 02:07:12 INFO Executor: Fetching spark://3790af8b1f92:37001/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.1.1.jar with timestamp 1632535629992
+21/09/25 02:07:12 INFO Utils: Fetching spark://3790af8b1f92:37001/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.1.1.jar to /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/fetchFileTemp7057412622760993573.tmp
+21/09/25 02:07:12 INFO Utils: /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/fetchFileTemp7057412622760993573.tmp has been previously copied to /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.1.1.jar
+21/09/25 02:07:12 INFO Executor: Adding file:/tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.1.1.jar to class loader
+21/09/25 02:07:12 INFO Executor: Fetching spark://3790af8b1f92:37001/jars/org.apache.kafka_kafka-clients-2.6.0.jar with timestamp 1632535629992
+21/09/25 02:07:12 INFO Utils: Fetching spark://3790af8b1f92:37001/jars/org.apache.kafka_kafka-clients-2.6.0.jar to /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/fetchFileTemp5192281331764425811.tmp
+21/09/25 02:07:12 INFO Utils: /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/fetchFileTemp5192281331764425811.tmp has been previously copied to /tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/org.apache.kafka_kafka-clients-2.6.0.jar
+21/09/25 02:07:12 INFO Executor: Adding file:/tmp/spark-5b7d7c0d-7492-44b9-ab78-134c9514790e/userFiles-70143f55-4b1c-43c9-9acb-78d83fd0eb61/org.apache.kafka_kafka-clients-2.6.0.jar to class loader
+21/09/25 02:07:12 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 37323.
+21/09/25 02:07:12 INFO NettyBlockTransferService: Server created on 3790af8b1f92:37323
+21/09/25 02:07:12 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+21/09/25 02:07:12 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 3790af8b1f92, 37323, None)
+21/09/25 02:07:12 INFO BlockManagerMasterEndpoint: Registering block manager 3790af8b1f92:37323 with 366.3 MiB RAM, BlockManagerId(driver, 3790af8b1f92, 37323, None)
+21/09/25 02:07:12 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 3790af8b1f92, 37323, None)
+21/09/25 02:07:12 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 3790af8b1f92, 37323, None)
+21/09/25 02:07:12 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/opt/bitnami/spark/spark-warehouse').
+21/09/25 02:07:12 INFO SharedState: Warehouse path is 'file:/opt/bitnami/spark/spark-warehouse'.
+21/09/25 02:07:17 WARN StreamingQueryManager: Temporary checkpoint location created which is deleted normally when the query didn't fail: /tmp/temporary-7b7543aa-6902-411b-a95b-1cf1fddc3b06. If it's required to delete it under any circumstances, please set spark.sql.streaming.forceDeleteTempCheckpointLocation to true. Important to know deleting temp checkpoint folder is best effort.
+-------------------------------------------
+Batch: 0
+-------------------------------------------
++--------------------+
+|               value|
++--------------------+
+|{"customer":"Angi...|
+|{"customer":"Angi...|
+|{"customer":"Sent...|
+|{"customer":"Sent...|
+|{"customer":"Jerr...|
+|{"customer":"Jerr...|
+|{"customer":"Crai...|
+|{"customer":"Crai...|
+|{"customer":"Chri...|
+|{"customer":"Chri...|
+|{"customer":"Chri...|
+|{"customer":"Chri...|
+|{"customer":"Chri...|
+|{"customer":"Chri...|
+|{"customer":"Chri...|
+|{"customer":"Chri...|
+|{"customer":"Davi...|
+|{"customer":"Davi...|
+|{"customer":"Edwa...|
+|{"customer":"Edwa...|
++--------------------+
+only showing top 20 rows
+
+^CTraceback (most recent call last):
+  File "/home/workspace/starter/sparkpykafkajoin.py", line 189, in <module>
+    console_query.awaitTermination()
+  File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/sql/streaming.py", line 101, in awaitTermination
+  File "/opt/bitnami/spark/python/lib/py4j-0.10.9-src.zip/py4j/java_gateway.py", line 1303, in __call__
+  File "/opt/bitnami/spark/python/lib/py4j-0.10.9-src.zip/py4j/java_gateway.py", line 1033, in send_command
+  File "/opt/bitnami/spark/python/lib/py4j-0.10.9-src.zip/py4j/java_gateway.py", line 1200, in send_command
+  File "/opt/bitnami/python/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+  File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/context.py", line 285, in signal_handler
+KeyboardInterrupt
+21/09/25 02:08:21 WARN Shell: Interrupted while joining on: Thread[Thread-30856,5,]
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Thread.join(Thread.java:1252)
+	at java.lang.Thread.join(Thread.java:1326)
+	at org.apache.hadoop.util.Shell.joinThread(Shell.java:1043)
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:1003)
+	at org.apache.hadoop.util.Shell.run(Shell.java:901)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:1213)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:1307)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:1289)
+	at org.apache.hadoop.fs.RawLocalFileSystem.setPermission(RawLocalFileSystem.java:865)
+	at org.apache.hadoop.fs.RawLocalFileSystem$LocalFSFileOutputStream.<init>(RawLocalFileSystem.java:252)
+	at org.apache.hadoop.fs.RawLocalFileSystem$LocalFSFileOutputStream.<init>(RawLocalFileSystem.java:232)
+	at org.apache.hadoop.fs.RawLocalFileSystem.createOutputStreamWithMode(RawLocalFileSystem.java:331)
+	at org.apache.hadoop.fs.RawLocalFileSystem.create(RawLocalFileSystem.java:320)
+	at org.apache.hadoop.fs.RawLocalFileSystem.create(RawLocalFileSystem.java:351)
+	at org.apache.hadoop.fs.FileSystem.primitiveCreate(FileSystem.java:1228)
+	at org.apache.hadoop.fs.DelegateToFileSystem.createInternal(DelegateToFileSystem.java:100)
+	at org.apache.hadoop.fs.ChecksumFs$ChecksumFSOutputSummer.<init>(ChecksumFs.java:353)
+	at org.apache.hadoop.fs.ChecksumFs.createInternal(ChecksumFs.java:400)
+	at org.apache.hadoop.fs.AbstractFileSystem.create(AbstractFileSystem.java:605)
+	at org.apache.hadoop.fs.FileContext$3.next(FileContext.java:696)
+	at org.apache.hadoop.fs.FileContext$3.next(FileContext.java:692)
+	at org.apache.hadoop.fs.FSLinkResolver.resolve(FSLinkResolver.java:90)
+	at org.apache.hadoop.fs.FileContext.create(FileContext.java:698)
+	at org.apache.spark.sql.execution.streaming.FileContextBasedCheckpointFileManager.createTempFile(CheckpointFileManager.scala:316)
+	at org.apache.spark.sql.execution.streaming.CheckpointFileManager$RenameBasedFSDataOutputStream.<init>(CheckpointFileManager.scala:133)
+	at org.apache.spark.sql.execution.streaming.CheckpointFileManager$RenameBasedFSDataOutputStream.<init>(CheckpointFileManager.scala:136)
+	at org.apache.spark.sql.execution.streaming.FileContextBasedCheckpointFileManager.createAtomic(CheckpointFileManager.scala:322)
+	at org.apache.spark.sql.execution.streaming.state.HDFSBackedStateStoreProvider$HDFSBackedStateStore.deltaFileStream$lzycompute(HDFSBackedStateStoreProvider.scala:115)
+	at org.apache.spark.sql.execution.streaming.state.HDFSBackedStateStoreProvider$HDFSBackedStateStore.deltaFileStream(HDFSBackedStateStoreProvider.scala:115)
+	at org.apache.spark.sql.execution.streaming.state.HDFSBackedStateStoreProvider$HDFSBackedStateStore.compressedStream$lzycompute(HDFSBackedStateStoreProvider.scala:116)
+	at org.apache.spark.sql.execution.streaming.state.HDFSBackedStateStoreProvider$HDFSBackedStateStore.compressedStream(HDFSBackedStateStoreProvider.scala:116)
+	at org.apache.spark.sql.execution.streaming.state.HDFSBackedStateStoreProvider$HDFSBackedStateStore.commit(HDFSBackedStateStoreProvider.scala:152)
+	at org.apache.spark.sql.execution.streaming.state.SymmetricHashJoinStateManager$StateStoreHandler.commit(SymmetricHashJoinStateManager.scala:351)
+	at org.apache.spark.sql.execution.streaming.state.SymmetricHashJoinStateManager.commit(SymmetricHashJoinStateManager.scala:296)
+	at org.apache.spark.sql.execution.streaming.StreamingSymmetricHashJoinExec$OneSideHashJoiner.commitStateAndGetMetrics(StreamingSymmetricHashJoinExec.scala:617)
+	at org.apache.spark.sql.execution.streaming.StreamingSymmetricHashJoinExec.$anonfun$processPartitions$23(StreamingSymmetricHashJoinExec.scala:416)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.util.Utils$.timeTakenMs(Utils.scala:597)
+	at org.apache.spark.sql.execution.streaming.StateStoreWriter.timeTakenMs(statefulOperators.scala:111)
+	at org.apache.spark.sql.execution.streaming.StateStoreWriter.timeTakenMs$(statefulOperators.scala:111)
+	at org.apache.spark.sql.execution.streaming.StreamingSymmetricHashJoinExec.timeTakenMs(StreamingSymmetricHashJoinExec.scala:127)
+	at org.apache.spark.sql.execution.streaming.StreamingSymmetricHashJoinExec.onOutputCompletion$1(StreamingSymmetricHashJoinExec.scala:414)
+	at org.apache.spark.sql.execution.streaming.StreamingSymmetricHashJoinExec.$anonfun$processPartitions$25(StreamingSymmetricHashJoinExec.scala:431)
+	at org.apache.spark.util.CompletionIterator$$anon$1.completion(CompletionIterator.scala:47)
+	at org.apache.spark.util.CompletionIterator.hasNext(CompletionIterator.scala:36)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:458)
+	at org.apache.spark.sql.execution.datasources.v2.DataWritingSparkTask$.$anonfun$run$1(WriteToDataSourceV2Exec.scala:413)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1473)
+	at org.apache.spark.sql.execution.datasources.v2.DataWritingSparkTask$.run(WriteToDataSourceV2Exec.scala:452)
+	at org.apache.spark.sql.execution.datasources.v2.V2TableWriteExec.$anonfun$writeWithV2$2(WriteToDataSourceV2Exec.scala:360)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:131)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:497)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1439)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:500)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+21/09/25 02:08:21 ERROR WriteToDataSourceV2Exec: Data source write support org.apache.spark.sql.execution.streaming.sources.MicroBatchWrite@1bda3a5b is aborting.
+21/09/25 02:08:21 ERROR WriteToDataSourceV2Exec: Data source write support org.apache.spark.sql.execution.streaming.sources.MicroBatchWrite@a556ccd is aborting.
+21/09/25 02:08:21 ERROR WriteToDataSourceV2Exec: Data source write support org.apache.spark.sql.execution.streaming.sources.MicroBatchWrite@a556ccd aborted.
+21/09/25 02:08:21 ERROR Utils: Aborting task
+java.lang.IllegalStateException: Error committing version 3 into HDFSStateStore[id=(op=0,part=189),dir=file:/tmp/kafkacheckpoint0/state/0/189/right-keyWithIndexToValue]
+	at org.apache.spark.sql.execution.streaming.state.HDFSBackedStateStoreProvider$HDFSBackedStateStore.commit(HDFSBackedStateStoreProvider.scala:159)
+	at org.apache.spark.sql.execution.streaming.state.SymmetricHashJoinStateManager$StateStoreHandler.commit(SymmetricHashJoinStateManager.scala:351)
+	at org.apache.spark.sql.execution.streaming.state.SymmetricHashJoinStateManager.commit(SymmetricHashJoinStateManager.scala:297)
+	at org.apache.spark.sql.execution.streaming.StreamingSymmetricHashJoinExec$OneSideHashJoiner.commitStateAndGetMetrics(StreamingSymmetricHashJoinExec.scala:617)
+	at org.apache.spark.sql.execution.streaming.StreamingSymmetricHashJoinExec.$anonfun$processPartitions$23(StreamingSymmetricHashJoinExec.scala:416)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.util.Utils$.timeTakenMs(Utils.scala:597)
+	at org.apache.spark.sql.execution.streaming.StateStoreWriter.timeTakenMs(statefulOperators.scala:111)
+	at org.apache.spark.sql.execution.streaming.StateStoreWriter.timeTakenMs$(statefulOperators.scala:111)
+	at org.apache.spark.sql.execution.streaming.StreamingSymmetricHashJoinExec.timeTakenMs(StreamingSymmetricHashJoinExec.scala:127)
+	at org.apache.spark.sql.execution.streaming.StreamingSymmetricHashJoinExec.onOutputCompletion$1(StreamingSymmetricHashJoinExec.scala:414)
+	at org.apache.spark.sql.execution.streaming.StreamingSymmetricHashJoinExec.$anonfun$processPartitions$25(StreamingSymmetricHashJoinExec.scala:431)
+	at org.apache.spark.util.CompletionIterator$$anon$1.completion(CompletionIterator.scala:47)
+	at org.apache.spark.util.CompletionIterator.hasNext(CompletionIterator.scala:36)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:458)
+	at org.apache.spark.sql.execution.datasources.v2.DataWritingSparkTask$.$anonfun$run$1(WriteToDataSourceV2Exec.scala:413)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1473)
+	at org.apache.spark.sql.execution.datasources.v2.DataWritingSparkTask$.run(WriteToDataSourceV2Exec.scala:452)
+	at org.apache.spark.sql.execution.datasources.v2.V2TableWriteExec.$anonfun$writeWithV2$2(WriteToDataSourceV2Exec.scala:360)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:131)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:497)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1439)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:500)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: ExitCodeException exitCode=130: 
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:1008)
+	at org.apache.hadoop.util.Shell.run(Shell.java:901)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:1213)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:1307)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:1289)
+	at org.apache.hadoop.fs.RawLocalFileSystem.setPermission(RawLocalFileSystem.java:865)
+	at org.apache.hadoop.fs.RawLocalFileSystem$LocalFSFileOutputStream.<init>(RawLocalFileSystem.java:252)
+	at org.apache.hadoop.fs.RawLocalFileSystem$LocalFSFileOutputStream.<init>(RawLocalFileSystem.java:232)
+	at org.apache.hadoop.fs.RawLocalFileSystem.createOutputStreamWithMode(RawLocalFileSystem.java:331)
+	at org.apache.hadoop.fs.RawLocalFileSystem.create(RawLocalFileSystem.java:320)
+	at org.apache.hadoop.fs.RawLocalFileSystem.create(RawLocalFileSystem.java:351)
+	at org.apache.hadoop.fs.FileSystem.primitiveCreate(FileSystem.java:1228)
+	at org.apache.hadoop.fs.DelegateToFileSystem.createInternal(DelegateToFileSystem.java:100)
+	at org.apache.hadoop.fs.ChecksumFs$ChecksumFSOutputSummer.<init>(ChecksumFs.java:360)
+	at org.apache.hadoop.fs.ChecksumFs.createInternal(ChecksumFs.java:400)
+	at org.apache.hadoop.fs.AbstractFileSystem.create(AbstractFileSystem.java:605)
+	at org.apache.hadoop.fs.FileContext$3.next(FileContext.java:696)
+	at org.apache.hadoop.fs.FileContext$3.next(FileContext.java:692)
+	at org.apache.hadoop.fs.FSLinkResolver.resolve(FSLinkResolver.java:90)
+	at org.apache.hadoop.fs.FileContext.create(FileContext.java:698)
+	at org.apache.spark.sql.execution.streaming.FileContextBasedCheckpointFileManager.createTempFile(CheckpointFileManager.scala:316)
+	at org.apache.spark.sql.execution.streaming.CheckpointFileManager$RenameBasedFSDataOutputStream.<init>(CheckpointFileManager.scala:133)
+	at org.apache.spark.sql.execution.streaming.CheckpointFileManager$RenameBasedFSDataOutputStream.<init>(CheckpointFileManager.scala:136)
+	at org.apache.spark.sql.execution.streaming.FileContextBasedCheckpointFileManager.createAtomic(CheckpointFileManager.scala:322)
+	at org.apache.spark.sql.execution.streaming.state.HDFSBackedStateStoreProvider$HDFSBackedStateStore.deltaFileStream$lzycompute(HDFSBackedStateStoreProvider.scala:115)
+	at org.apache.spark.sql.execution.streaming.state.HDFSBackedStateStoreProvider$HDFSBackedStateStore.deltaFileStream(HDFSBackedStateStoreProvider.scala:115)
+	at org.apache.spark.sql.execution.streaming.state.HDFSBackedStateStoreProvider$HDFSBackedStateStore.compressedStream$lzycompute(HDFSBackedStateStoreProvider.scala:116)
+	at org.apache.spark.sql.execution.streaming.state.HDFSBackedStateStoreProvider$HDFSBackedStateStore.compressedStream(HDFSBackedStateStoreProvider.scala:116)
+	at org.apache.spark.sql.execution.streaming.state.HDFSBackedStateStoreProvider$HDFSBackedStateStore.commit(HDFSBackedStateStoreProvider.scala:152)
+	... 26 more
+21/09/25 02:08:21 WARN Shell: Interrupted while joining on: Thread[Thread-30852,5,main]
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Thread.join(Thread.java:1252)
+	at java.lang.Thread.join(Thread.java:1326)
+	at org.apache.hadoop.util.Shell.joinThread(Shell.java:1043)
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:1003)
+	at org.apache.hadoop.util.Shell.run(Shell.java:901)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:1213)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:1307)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:1289)
+	at org.apache.hadoop.fs.RawLocalFileSystem.setPermission(RawLocalFileSystem.java:865)
+	at org.apache.hadoop.fs.RawLocalFileSystem$LocalFSFileOutputStream.<init>(RawLocalFileSystem.java:252)
+	at org.apache.hadoop.fs.RawLocalFileSystem$LocalFSFileOutputStream.<init>(RawLocalFileSystem.java:232)
+	at org.apache.hadoop.fs.RawLocalFileSystem.createOutputStreamWithMode(RawLocalFileSystem.java:331)
+	at org.apache.hadoop.fs.RawLocalFileSystem.create(RawLocalFileSystem.java:320)
+	at org.apache.hadoop.fs.RawLocalFileSystem.create(RawLocalFileSystem.java:351)
+	at org.apache.hadoop.fs.FileSystem.primitiveCreate(FileSystem.java:1228)
+	at org.apache.hadoop.fs.DelegateToFileSystem.createInternal(DelegateToFileSystem.java:100)
+	at org.apache.hadoop.fs.ChecksumFs$ChecksumFSOutputSummer.<init>(ChecksumFs.java:353)
+	at org.apache.hadoop.fs.ChecksumFs.createInternal(ChecksumFs.java:400)
+	at org.apache.hadoop.fs.AbstractFileSystem.create(AbstractFileSystem.java:605)
+	at org.apache.hadoop.fs.FileContext$3.next(FileContext.java:696)
+	at org.apache.hadoop.fs.FileContext$3.next(FileContext.java:692)
+	at org.apache.hadoop.fs.FSLinkResolver.resolve(FSLinkResolver.java:90)
+	at org.apache.hadoop.fs.FileContext.create(FileContext.java:698)
+	at org.apache.spark.sql.execution.streaming.FileContextBasedCheckpointFileManager.createTempFile(CheckpointFileManager.scala:316)
+	at org.apache.spark.sql.execution.streaming.CheckpointFileManager$RenameBasedFSDataOutputStream.<init>(CheckpointFileManager.scala:133)
+	at org.apache.spark.sql.execution.streaming.CheckpointFileManager$RenameBasedFSDataOutputStream.<init>(CheckpointFileManager.scala:136)
+	at org.apache.spark.sql.execution.streaming.FileContextBasedCheckpointFileManager.createAtomic(CheckpointFileManager.scala:322)
+	at org.apache.spark.sql.execution.streaming.state.HDFSBackedStateStoreProvider$HDFSBackedStateStore.deltaFileStream$lzycompute(HDFSBackedStateStoreProvider.scala:115)
+	at org.apache.spark.sql.execution.streaming.state.HDFSBackedStateStoreProvider$HDFSBackedStateStore.deltaFileStream(HDFSBackedStateStoreProvider.scala:115)
+	at org.apache.spark.sql.execution.streaming.state.HDFSBackedStateStoreProvider$HDFSBackedStateStore.compressedStream$lzycompute(HDFSBackedStateStoreProvider.scala:116)
+	at org.apache.spark.sql.execution.streaming.state.HDFSBackedStateStoreProvider$HDFSBackedStateStore.compressedStream(HDFSBackedStateStoreProvider.scala:116)
+	at org.apache.spark.sql.execution.streaming.state.HDFSBackedStateStoreProvider$HDFSBackedStateStore.commit(HDFSBackedStateStoreProvider.scala:152)
+	at org.apache.spark.sql.execution.streaming.state.SymmetricHashJoinStateManager$StateStoreHandler.commit(SymmetricHashJoinStateManager.scala:351)
+	at org.apache.spark.sql.execution.streaming.state.SymmetricHashJoinStateManager.commit(SymmetricHashJoinStateManager.scala:297)
+	at org.apache.spark.sql.execution.streaming.StreamingSymmetricHashJoinExec$OneSideHashJoiner.commitStateAndGetMetrics(StreamingSymmetricHashJoinExec.scala:617)
+	at org.apache.spark.sql.execution.streaming.StreamingSymmetricHashJoinExec.$anonfun$processPartitions$23(StreamingSymmetricHashJoinExec.scala:416)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.util.Utils$.timeTakenMs(Utils.scala:597)
+	at org.apache.spark.sql.execution.streaming.StateStoreWriter.timeTakenMs(statefulOperators.scala:111)
+	at org.apache.spark.sql.execution.streaming.StateStoreWriter.timeTakenMs$(statefulOperators.scala:111)
+	at org.apache.spark.sql.execution.streaming.StreamingSymmetricHashJoinExec.timeTakenMs(StreamingSymmetricHashJoinExec.scala:127)
+	at org.apache.spark.sql.execution.streaming.StreamingSymmetricHashJoinExec.onOutputCompletion$1(StreamingSymmetricHashJoinExec.scala:414)
+	at org.apache.spark.sql.execution.streaming.StreamingSymmetricHashJoinExec.$anonfun$processPartitions$25(StreamingSymmetricHashJoinExec.scala:431)
+	at org.apache.spark.util.CompletionIterator$$anon$1.completion(CompletionIterator.scala:47)
+	at org.apache.spark.util.CompletionIterator.hasNext(CompletionIterator.scala:36)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:458)
+	at org.apache.spark.sql.execution.datasources.v2.DataWritingSparkTask$.$anonfun$run$1(WriteToDataSourceV2Exec.scala:413)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1473)
+	at org.apache.spark.sql.execution.datasources.v2.DataWritingSparkTask$.run(WriteToDataSourceV2Exec.scala:452)
+	at org.apache.spark.sql.execution.datasources.v2.V2TableWriteExec.$anonfun$writeWithV2$2(WriteToDataSourceV2Exec.scala:360)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:131)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:497)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1439)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:500)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+21/09/25 02:08:21 WARN Shell: Interrupted while joining on: Thread[Thread-30853,5,main]
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Thread.join(Thread.java:1252)
+	at java.lang.Thread.join(Thread.java:1326)
+	at org.apache.hadoop.util.Shell.joinThread(Shell.java:1043)
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:1003)
+	at org.apache.hadoop.util.Shell.run(Shell.java:901)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:1213)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:1307)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:1289)
+	at org.apache.hadoop.fs.RawLocalFileSystem.setPermission(RawLocalFileSystem.java:865)
+	at org.apache.hadoop.fs.RawLocalFileSystem$LocalFSFileOutputStream.<init>(RawLocalFileSystem.java:252)
+	at org.apache.hadoop.fs.RawLocalFileSystem$LocalFSFileOutputStream.<init>(RawLocalFileSystem.java:232)
+	at org.apache.hadoop.fs.RawLocalFileSystem.createOutputStreamWithMode(RawLocalFileSystem.java:331)
+	at org.apache.hadoop.fs.RawLocalFileSystem.create(RawLocalFileSystem.java:320)
+	at org.apache.hadoop.fs.RawLocalFileSystem.create(RawLocalFileSystem.java:351)
+	at org.apache.hadoop.fs.FileSystem.primitiveCreate(FileSystem.java:1228)
+	at org.apache.hadoop.fs.DelegateToFileSystem.createInternal(DelegateToFileSystem.java:100)
+	at org.apache.hadoop.fs.ChecksumFs$ChecksumFSOutputSummer.<init>(ChecksumFs.java:353)
+	at org.apache.hadoop.fs.ChecksumFs.createInternal(ChecksumFs.java:400)
+	at org.apache.hadoop.fs.AbstractFileSystem.create(AbstractFileSystem.java:605)
+	at org.apache.hadoop.fs.FileContext$3.next(FileContext.java:696)
+	at org.apache.hadoop.fs.FileContext$3.next(FileContext.java:692)
+	at org.apache.hadoop.fs.FSLinkResolver.resolve(FSLinkResolver.java:90)
+	at org.apache.hadoop.fs.FileContext.create(FileContext.java:698)
+	at org.apache.spark.sql.execution.streaming.FileContextBasedCheckpointFileManager.createTempFile(CheckpointFileManager.scala:316)
+	at org.apache.spark.sql.execution.streaming.CheckpointFileManager$RenameBasedFSDataOutputStream.<init>(CheckpointFileManager.scala:133)
+	at org.apache.spark.sql.execution.streaming.CheckpointFileManager$RenameBasedFSDataOutputStream.<init>(CheckpointFileManager.scala:136)
+	at org.apache.spark.sql.execution.streaming.FileContextBasedCheckpointFileManager.createAtomic(CheckpointFileManager.scala:322)
+	at org.apache.spark.sql.execution.streaming.state.HDFSBackedStateStoreProvider$HDFSBackedStateStore.deltaFileStream$lzycompute(HDFSBackedStateStoreProvider.scala:115)
+	at org.apache.spark.sql.execution.streaming.state.HDFSBackedStateStoreProvider$HDFSBackedStateStore.deltaFileStream(HDFSBackedStateStoreProvider.scala:115)
+	at org.apache.spark.sql.execution.streaming.state.HDFSBackedStateStoreProvider$HDFSBackedStateStore.compressedStream$lzycompute(HDFSBackedStateStoreProvider.scala:116)
+	at org.apache.spark.sql.execution.streaming.state.HDFSBackedStateStoreProvider$HDFSBackedStateStore.compressedStream(HDFSBackedStateStoreProvider.scala:116)
+	at org.apache.spark.sql.execution.streaming.state.HDFSBackedStateStoreProvider$HDFSBackedStateStore.commit(HDFSBackedStateStoreProvider.scala:152)
+	at org.apache.spark.sql.execution.streaming.state.SymmetricHashJoinStateManager$StateStoreHandler.commit(SymmetricHashJoinStateManager.scala:351)
+	at org.apache.spark.sql.execution.streaming.state.SymmetricHashJoinStateManager.commit(SymmetricHashJoinStateManager.scala:297)
+	at org.apache.spark.sql.execution.streaming.StreamingSymmetricHashJoinExec$OneSideHashJoiner.commitStateAndGetMetrics(StreamingSymmetricHashJoinExec.scala:617)
+	at org.apache.spark.sql.execution.streaming.StreamingSymmetricHashJoinExec.$anonfun$processPartitions$23(StreamingSymmetricHashJoinExec.scala:416)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.util.Utils$.timeTakenMs(Utils.scala:597)
+	at org.apache.spark.sql.execution.streaming.StateStoreWriter.timeTakenMs(statefulOperators.scala:111)
+	at org.apache.spark.sql.execution.streaming.StateStoreWriter.timeTakenMs$(statefulOperators.scala:111)
+	at org.apache.spark.sql.execution.streaming.StreamingSymmetricHashJoinExec.timeTakenMs(StreamingSymmetricHashJoinExec.scala:127)
+	at org.apache.spark.sql.execution.streaming.StreamingSymmetricHashJoinExec.onOutputCompletion$1(StreamingSymmetricHashJoinExec.scala:414)
+	at org.apache.spark.sql.execution.streaming.StreamingSymmetricHashJoinExec.$anonfun$processPartitions$25(StreamingSymmetricHashJoinExec.scala:431)
+	at org.apache.spark.util.CompletionIterator$$anon$1.completion(CompletionIterator.scala:47)
+	at org.apache.spark.util.CompletionIterator.hasNext(CompletionIterator.scala:36)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:458)
+	at org.apache.spark.sql.execution.datasources.v2.DataWritingSparkTask$.$anonfun$run$1(WriteToDataSourceV2Exec.scala:413)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1473)
+	at org.apache.spark.sql.execution.datasources.v2.DataWritingSparkTask$.run(WriteToDataSourceV2Exec.scala:452)
+	at org.apache.spark.sql.execution.datasources.v2.V2TableWriteExec.$anonfun$writeWithV2$2(WriteToDataSourceV2Exec.scala:360)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:131)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:497)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1439)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:500)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+21/09/25 02:08:21 WARN Shell: Interrupted while joining on: Thread[Thread-30854,5,main]
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Thread.join(Thread.java:1252)
+	at java.lang.Thread.join(Thread.java:1326)
+	at org.apache.hadoop.util.Shell.joinThread(Shell.java:1043)
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:1003)
+	at org.apache.hadoop.util.Shell.run(Shell.java:901)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:1213)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:1307)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:1289)
+	at org.apache.hadoop.fs.RawLocalFileSystem.setPermission(RawLocalFileSystem.java:865)
+	at org.apache.hadoop.fs.RawLocalFileSystem$LocalFSFileOutputStream.<init>(RawLocalFileSystem.java:252)
+	at org.apache.hadoop.fs.RawLocalFileSystem$LocalFSFileOutputStream.<init>(RawLocalFileSystem.java:232)
+	at org.apache.hadoop.fs.RawLocalFileSystem.createOutputStreamWithMode(RawLocalFileSystem.java:331)
+	at org.apache.hadoop.fs.RawLocalFileSystem.create(RawLocalFileSystem.java:320)
+	at org.apache.hadoop.fs.RawLocalFileSystem.create(RawLocalFileSystem.java:351)
+	at org.apache.hadoop.fs.FileSystem.primitiveCreate(FileSystem.java:1228)
+	at org.apache.hadoop.fs.DelegateToFileSystem.createInternal(DelegateToFileSystem.java:100)
+	at org.apache.hadoop.fs.ChecksumFs$ChecksumFSOutputSummer.<init>(ChecksumFs.java:353)
+	at org.apache.hadoop.fs.ChecksumFs.createInternal(ChecksumFs.java:400)
+	at org.apache.hadoop.fs.AbstractFileSystem.create(AbstractFileSystem.java:605)
+	at org.apache.hadoop.fs.FileContext$3.next(FileContext.java:696)
+	at org.apache.hadoop.fs.FileContext$3.next(FileContext.java:692)
+	at org.apache.hadoop.fs.FSLinkResolver.resolve(FSLinkResolver.java:90)
+	at org.apache.hadoop.fs.FileContext.create(FileContext.java:698)
+	at org.apache.spark.sql.execution.streaming.FileContextBasedCheckpointFileManager.createTempFile(CheckpointFileManager.scala:316)
+	at org.apache.spark.sql.execution.streaming.CheckpointFileManager$RenameBasedFSDataOutputStream.<init>(CheckpointFileManager.scala:133)
+	at org.apache.spark.sql.execution.streaming.CheckpointFileManager$RenameBasedFSDataOutputStream.<init>(CheckpointFileManager.scala:136)
+	at org.apache.spark.sql.execution.streaming.FileContextBasedCheckpointFileManager.createAtomic(CheckpointFileManager.scala:322)
+	at org.apache.spark.sql.execution.streaming.state.HDFSBackedStateStoreProvider$HDFSBackedStateStore.deltaFileStream$lzycompute(HDFSBackedStateStoreProvider.scala:115)
+	at org.apache.spark.sql.execution.streaming.state.HDFSBackedStateStoreProvider$HDFSBackedStateStore.deltaFileStream(HDFSBackedStateStoreProvider.scala:115)
+	at org.apache.spark.sql.execution.streaming.state.HDFSBackedStateStoreProvider$HDFSBackedStateStore.compressedStream$lzycompute(HDFSBackedStateStoreProvider.scala:116)
+	at org.apache.spark.sql.execution.streaming.state.HDFSBackedStateStoreProvider$HDFSBackedStateStore.compressedStream(HDFSBackedStateStoreProvider.scala:116)
+	at org.apache.spark.sql.execution.streaming.state.HDFSBackedStateStoreProvider$HDFSBackedStateStore.commit(HDFSBackedStateStoreProvider.scala:152)
+	at org.apache.spark.sql.execution.streaming.state.SymmetricHashJoinStateManager$StateStoreHandler.commit(SymmetricHashJoinStateManager.scala:351)
+	at org.apache.spark.sql.execution.streaming.state.SymmetricHashJoinStateManager.commit(SymmetricHashJoinStateManager.scala:296)
+	at org.apache.spark.sql.execution.streaming.StreamingSymmetricHashJoinExec$OneSideHashJoiner.commitStateAndGetMetrics(StreamingSymmetricHashJoinExec.scala:617)
+	at org.apache.spark.sql.execution.streaming.StreamingSymmetricHashJoinExec.$anonfun$processPartitions$23(StreamingSymmetricHashJoinExec.scala:416)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.util.Utils$.timeTakenMs(Utils.scala:597)
+	at org.apache.spark.sql.execution.streaming.StateStoreWriter.timeTakenMs(statefulOperators.scala:111)
+	at org.apache.spark.sql.execution.streaming.StateStoreWriter.timeTakenMs$(statefulOperators.scala:111)
+	at org.apache.spark.sql.execution.streaming.StreamingSymmetricHashJoinExec.timeTakenMs(StreamingSymmetricHashJoinExec.scala:127)
+	at org.apache.spark.sql.execution.streaming.StreamingSymmetricHashJoinExec.onOutputCompletion$1(StreamingSymmetricHashJoinExec.scala:414)
+	at org.apache.spark.sql.execution.streaming.StreamingSymmetricHashJoinExec.$anonfun$processPartitions$25(StreamingSymmetricHashJoinExec.scala:431)
+	at org.apache.spark.util.CompletionIterator$$anon$1.completion(CompletionIterator.scala:47)
+	at org.apache.spark.util.CompletionIterator.hasNext(CompletionIterator.scala:36)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:458)
+	at org.apache.spark.sql.execution.datasources.v2.DataWritingSparkTask$.$anonfun$run$1(WriteToDataSourceV2Exec.scala:413)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1473)
+	at org.apache.spark.sql.execution.datasources.v2.DataWritingSparkTask$.run(WriteToDataSourceV2Exec.scala:452)
+	at org.apache.spark.sql.execution.datasources.v2.V2TableWriteExec.$anonfun$writeWithV2$2(WriteToDataSourceV2Exec.scala:360)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:131)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:497)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1439)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:500)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+21/09/25 02:08:21 ERROR DataWritingSparkTask: Aborting commit for partition 189 (task 1197, attempt 0, stage 17.0)
+21/09/25 02:08:21 ERROR DataWritingSparkTask: Aborted commit for partition 189 (task 1197, attempt 0, stage 17.0)
+21/09/25 02:08:21 ERROR WriteToDataSourceV2Exec: Data source write support org.apache.spark.sql.execution.streaming.sources.MicroBatchWrite@1bda3a5b aborted.
+21/09/25 02:08:21 ERROR MicroBatchExecution: Query [id = cfcc2ffd-c361-40af-8955-dcfb4ed7be20, runId = de9f8dd7-5a50-4a6c-a2fc-381b3e5bedeb] terminated with error
+org.apache.spark.SparkException: Writing job aborted.
+	at org.apache.spark.sql.execution.datasources.v2.V2TableWriteExec.writeWithV2(WriteToDataSourceV2Exec.scala:388)
+	at org.apache.spark.sql.execution.datasources.v2.V2TableWriteExec.writeWithV2$(WriteToDataSourceV2Exec.scala:336)
+	at org.apache.spark.sql.execution.datasources.v2.WriteToDataSourceV2Exec.writeWithV2(WriteToDataSourceV2Exec.scala:297)
+	at org.apache.spark.sql.execution.datasources.v2.WriteToDataSourceV2Exec.run(WriteToDataSourceV2Exec.scala:304)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.result$lzycompute(V2CommandExec.scala:40)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.result(V2CommandExec.scala:40)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.executeCollect(V2CommandExec.scala:46)
+	at org.apache.spark.sql.Dataset.collectFromPlan(Dataset.scala:3696)
+	at org.apache.spark.sql.Dataset.$anonfun$collect$1(Dataset.scala:2965)
+	at org.apache.spark.sql.Dataset.$anonfun$withAction$1(Dataset.scala:3687)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$5(SQLExecution.scala:103)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:163)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:90)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:775)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:64)
+	at org.apache.spark.sql.Dataset.withAction(Dataset.scala:3685)
+	at org.apache.spark.sql.Dataset.collect(Dataset.scala:2965)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runBatch$16(MicroBatchExecution.scala:589)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$5(SQLExecution.scala:103)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:163)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:90)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:775)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:64)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runBatch$15(MicroBatchExecution.scala:584)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken(ProgressReporter.scala:357)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken$(ProgressReporter.scala:355)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.reportTimeTaken(StreamExecution.scala:68)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.runBatch(MicroBatchExecution.scala:584)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runActivatedStream$2(MicroBatchExecution.scala:226)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken(ProgressReporter.scala:357)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken$(ProgressReporter.scala:355)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.reportTimeTaken(StreamExecution.scala:68)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runActivatedStream$1(MicroBatchExecution.scala:194)
+	at org.apache.spark.sql.execution.streaming.ProcessingTimeExecutor.execute(TriggerExecutor.scala:57)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.runActivatedStream(MicroBatchExecution.scala:188)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.$anonfun$runStream$1(StreamExecution.scala:334)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:775)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.org$apache$spark$sql$execution$streaming$StreamExecution$$runStream(StreamExecution.scala:317)
+	at org.apache.spark.sql.execution.streaming.StreamExecution$$anon$1.run(StreamExecution.scala:244)
+Caused by: org.apache.spark.SparkException: Job 6 cancelled as part of cancellation of all jobs
+	at org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2258)
+	at org.apache.spark.scheduler.DAGScheduler.handleJobCancellation(DAGScheduler.scala:2154)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$doCancelAllJobs$2(DAGScheduler.scala:972)
+	at scala.runtime.java8.JFunction1$mcVI$sp.apply(JFunction1$mcVI$sp.java:23)
+	at scala.collection.mutable.HashSet.foreach(HashSet.scala:79)
+	at org.apache.spark.scheduler.DAGScheduler.doCancelAllJobs(DAGScheduler.scala:971)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:2410)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2387)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2376)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:49)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:868)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2196)
+	at org.apache.spark.sql.execution.datasources.v2.V2TableWriteExec.writeWithV2(WriteToDataSourceV2Exec.scala:357)
+	... 40 more
+21/09/25 02:08:21 WARN Shell: Interrupted while joining on: Thread[Thread-30870,5,main]
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Thread.join(Thread.java:1252)
+	at java.lang.Thread.join(Thread.java:1326)
+	at org.apache.hadoop.util.Shell.joinThread(Shell.java:1043)
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:1003)
+	at org.apache.hadoop.util.Shell.run(Shell.java:901)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:1213)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:1307)
+	at org.apache.hadoop.util.Shell.execCommand(Shell.java:1289)
+	at org.apache.hadoop.fs.RawLocalFileSystem.setPermission(RawLocalFileSystem.java:865)
+	at org.apache.hadoop.fs.RawLocalFileSystem$LocalFSFileOutputStream.<init>(RawLocalFileSystem.java:252)
+	at org.apache.hadoop.fs.RawLocalFileSystem$LocalFSFileOutputStream.<init>(RawLocalFileSystem.java:232)
+	at org.apache.hadoop.fs.RawLocalFileSystem.createOutputStreamWithMode(RawLocalFileSystem.java:331)
+	at org.apache.hadoop.fs.RawLocalFileSystem.create(RawLocalFileSystem.java:320)
+	at org.apache.hadoop.fs.RawLocalFileSystem.create(RawLocalFileSystem.java:351)
+	at org.apache.hadoop.fs.FileSystem.primitiveCreate(FileSystem.java:1228)
+	at org.apache.hadoop.fs.DelegateToFileSystem.createInternal(DelegateToFileSystem.java:100)
+	at org.apache.hadoop.fs.ChecksumFs$ChecksumFSOutputSummer.<init>(ChecksumFs.java:353)
+	at org.apache.hadoop.fs.ChecksumFs.createInternal(ChecksumFs.java:400)
+	at org.apache.hadoop.fs.AbstractFileSystem.create(AbstractFileSystem.java:605)
+	at org.apache.hadoop.fs.FileContext$3.next(FileContext.java:696)
+	at org.apache.hadoop.fs.FileContext$3.next(FileContext.java:692)
+	at org.apache.hadoop.fs.FSLinkResolver.resolve(FSLinkResolver.java:90)
+	at org.apache.hadoop.fs.FileContext.create(FileContext.java:698)
+	at org.apache.spark.sql.execution.streaming.FileContextBasedCheckpointFileManager.createTempFile(CheckpointFileManager.scala:316)
+	at org.apache.spark.sql.execution.streaming.CheckpointFileManager$RenameBasedFSDataOutputStream.<init>(CheckpointFileManager.scala:133)
+	at org.apache.spark.sql.execution.streaming.CheckpointFileManager$RenameBasedFSDataOutputStream.<init>(CheckpointFileManager.scala:136)
+	at org.apache.spark.sql.execution.streaming.FileContextBasedCheckpointFileManager.createAtomic(CheckpointFileManager.scala:322)
+	at org.apache.spark.sql.execution.streaming.state.HDFSBackedStateStoreProvider$HDFSBackedStateStore.deltaFileStream$lzycompute(HDFSBackedStateStoreProvider.scala:115)
+	at org.apache.spark.sql.execution.streaming.state.HDFSBackedStateStoreProvider$HDFSBackedStateStore.deltaFileStream(HDFSBackedStateStoreProvider.scala:115)
+	at org.apache.spark.sql.execution.streaming.state.HDFSBackedStateStoreProvider$HDFSBackedStateStore.compressedStream$lzycompute(HDFSBackedStateStoreProvider.scala:116)
+	at org.apache.spark.sql.execution.streaming.state.HDFSBackedStateStoreProvider$HDFSBackedStateStore.compressedStream(HDFSBackedStateStoreProvider.scala:116)
+	at org.apache.spark.sql.execution.streaming.state.HDFSBackedStateStoreProvider$HDFSBackedStateStore.abort(HDFSBackedStateStoreProvider.scala:169)
+	at org.apache.spark.sql.execution.streaming.state.SymmetricHashJoinStateManager$StateStoreHandler.abortIfNeeded(SymmetricHashJoinStateManager.scala:358)
+	at org.apache.spark.sql.execution.streaming.state.SymmetricHashJoinStateManager.abortIfNeeded(SymmetricHashJoinStateManager.scala:303)
+	at org.apache.spark.sql.execution.streaming.state.SymmetricHashJoinStateManager.$anonfun$new$2(SymmetricHashJoinStateManager.scala:342)
+	at org.apache.spark.sql.execution.streaming.state.SymmetricHashJoinStateManager.$anonfun$new$2$adapted(SymmetricHashJoinStateManager.scala:342)
+	at org.apache.spark.TaskContext$$anon$1.onTaskCompletion(TaskContext.scala:125)
+	at org.apache.spark.TaskContextImpl.$anonfun$markTaskCompleted$1(TaskContextImpl.scala:124)
+	at org.apache.spark.TaskContextImpl.$anonfun$markTaskCompleted$1$adapted(TaskContextImpl.scala:124)
+	at org.apache.spark.TaskContextImpl.$anonfun$invokeListeners$1(TaskContextImpl.scala:137)
+	at org.apache.spark.TaskContextImpl.$anonfun$invokeListeners$1$adapted(TaskContextImpl.scala:135)
+	at scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:62)
+	at scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:55)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:49)
+	at org.apache.spark.TaskContextImpl.invokeListeners(TaskContextImpl.scala:135)
+	at org.apache.spark.TaskContextImpl.markTaskCompleted(TaskContextImpl.scala:124)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:497)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1439)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:500)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+21/09/25 02:08:21 ERROR MicroBatchExecution: Query [id = c9a9f448-8329-4810-87d2-6fedcc41f85d, runId = 04351a60-2750-48a4-9021-2fed2ea13a0d] terminated with error
+org.apache.spark.SparkException: Writing job aborted.
+	at org.apache.spark.sql.execution.datasources.v2.V2TableWriteExec.writeWithV2(WriteToDataSourceV2Exec.scala:388)
+	at org.apache.spark.sql.execution.datasources.v2.V2TableWriteExec.writeWithV2$(WriteToDataSourceV2Exec.scala:336)
+	at org.apache.spark.sql.execution.datasources.v2.WriteToDataSourceV2Exec.writeWithV2(WriteToDataSourceV2Exec.scala:297)
+	at org.apache.spark.sql.execution.datasources.v2.WriteToDataSourceV2Exec.run(WriteToDataSourceV2Exec.scala:304)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.result$lzycompute(V2CommandExec.scala:40)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.result(V2CommandExec.scala:40)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.executeCollect(V2CommandExec.scala:46)
+	at org.apache.spark.sql.Dataset.collectFromPlan(Dataset.scala:3696)
+	at org.apache.spark.sql.Dataset.$anonfun$collect$1(Dataset.scala:2965)
+	at org.apache.spark.sql.Dataset.$anonfun$withAction$1(Dataset.scala:3687)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$5(SQLExecution.scala:103)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:163)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:90)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:775)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:64)
+	at org.apache.spark.sql.Dataset.withAction(Dataset.scala:3685)
+	at org.apache.spark.sql.Dataset.collect(Dataset.scala:2965)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runBatch$16(MicroBatchExecution.scala:589)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$5(SQLExecution.scala:103)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:163)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:90)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:775)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:64)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runBatch$15(MicroBatchExecution.scala:584)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken(ProgressReporter.scala:357)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken$(ProgressReporter.scala:355)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.reportTimeTaken(StreamExecution.scala:68)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.runBatch(MicroBatchExecution.scala:584)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runActivatedStream$2(MicroBatchExecution.scala:226)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken(ProgressReporter.scala:357)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken$(ProgressReporter.scala:355)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.reportTimeTaken(StreamExecution.scala:68)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runActivatedStream$1(MicroBatchExecution.scala:194)
+	at org.apache.spark.sql.execution.streaming.ProcessingTimeExecutor.execute(TriggerExecutor.scala:57)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.runActivatedStream(MicroBatchExecution.scala:188)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.$anonfun$runStream$1(StreamExecution.scala:334)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:775)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.org$apache$spark$sql$execution$streaming$StreamExecution$$runStream(StreamExecution.scala:317)
+	at org.apache.spark.sql.execution.streaming.StreamExecution$$anon$1.run(StreamExecution.scala:244)
+Caused by: org.apache.spark.SparkException: Job 5 cancelled as part of cancellation of all jobs
+	at org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2258)
+	at org.apache.spark.scheduler.DAGScheduler.handleJobCancellation(DAGScheduler.scala:2154)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$doCancelAllJobs$2(DAGScheduler.scala:972)
+	at scala.runtime.java8.JFunction1$mcVI$sp.apply(JFunction1$mcVI$sp.java:23)
+	at scala.collection.mutable.HashSet.foreach(HashSet.scala:79)
+	at org.apache.spark.scheduler.DAGScheduler.doCancelAllJobs(DAGScheduler.scala:971)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:2410)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2387)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2376)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:49)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:868)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2196)
+	at org.apache.spark.sql.execution.datasources.v2.V2TableWriteExec.writeWithV2(WriteToDataSourceV2Exec.scala:357)
+	... 40 more
+21/09/25 02:08:21 ERROR Utils: Aborting task
+org.apache.spark.executor.CommitDeniedException: Commit denied for partition 190 (task 1198, attempt 0, stage 17.0)
+	at org.apache.spark.sql.execution.datasources.v2.DataWritingSparkTask$.$anonfun$run$1(WriteToDataSourceV2Exec.scala:431)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1473)
+	at org.apache.spark.sql.execution.datasources.v2.DataWritingSparkTask$.run(WriteToDataSourceV2Exec.scala:452)
+	at org.apache.spark.sql.execution.datasources.v2.V2TableWriteExec.$anonfun$writeWithV2$2(WriteToDataSourceV2Exec.scala:360)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:131)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:497)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1439)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:500)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+21/09/25 02:08:21 ERROR Utils: Aborting task
+org.apache.spark.executor.CommitDeniedException: Commit denied for partition 192 (task 1200, attempt 0, stage 17.0)
+	at org.apache.spark.sql.execution.datasources.v2.DataWritingSparkTask$.$anonfun$run$1(WriteToDataSourceV2Exec.scala:431)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1473)
+	at org.apache.spark.sql.execution.datasources.v2.DataWritingSparkTask$.run(WriteToDataSourceV2Exec.scala:452)
+	at org.apache.spark.sql.execution.datasources.v2.V2TableWriteExec.$anonfun$writeWithV2$2(WriteToDataSourceV2Exec.scala:360)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:131)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:497)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1439)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:500)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+21/09/25 02:08:21 ERROR Utils: Aborting task
+org.apache.spark.executor.CommitDeniedException: Commit denied for partition 191 (task 1199, attempt 0, stage 17.0)
+	at org.apache.spark.sql.execution.datasources.v2.DataWritingSparkTask$.$anonfun$run$1(WriteToDataSourceV2Exec.scala:431)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1473)
+	at org.apache.spark.sql.execution.datasources.v2.DataWritingSparkTask$.run(WriteToDataSourceV2Exec.scala:452)
+	at org.apache.spark.sql.execution.datasources.v2.V2TableWriteExec.$anonfun$writeWithV2$2(WriteToDataSourceV2Exec.scala:360)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:131)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:497)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1439)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:500)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+21/09/25 02:08:21 ERROR DataWritingSparkTask: Aborting commit for partition 190 (task 1198, attempt 0, stage 17.0)
+21/09/25 02:08:21 ERROR DataWritingSparkTask: Aborted commit for partition 190 (task 1198, attempt 0, stage 17.0)
+21/09/25 02:08:21 ERROR DataWritingSparkTask: Aborting commit for partition 192 (task 1200, attempt 0, stage 17.0)
+21/09/25 02:08:21 ERROR DataWritingSparkTask: Aborting commit for partition 191 (task 1199, attempt 0, stage 17.0)
+21/09/25 02:08:21 ERROR DataWritingSparkTask: Aborted commit for partition 192 (task 1200, attempt 0, stage 17.0)
+21/09/25 02:08:21 ERROR DataWritingSparkTask: Aborted commit for partition 191 (task 1199, attempt 0, stage 17.0)
+21/09/25 02:08:21 ERROR Utils: Aborting task
+org.apache.spark.executor.CommitDeniedException: Commit denied for partition 193 (task 1201, attempt 0, stage 17.0)
+	at org.apache.spark.sql.execution.datasources.v2.DataWritingSparkTask$.$anonfun$run$1(WriteToDataSourceV2Exec.scala:431)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1473)
+	at org.apache.spark.sql.execution.datasources.v2.DataWritingSparkTask$.run(WriteToDataSourceV2Exec.scala:452)
+	at org.apache.spark.sql.execution.datasources.v2.V2TableWriteExec.$anonfun$writeWithV2$2(WriteToDataSourceV2Exec.scala:360)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:131)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:497)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1439)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:500)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+21/09/25 02:08:21 ERROR DataWritingSparkTask: Aborting commit for partition 193 (task 1201, attempt 0, stage 17.0)
+21/09/25 02:08:21 ERROR DataWritingSparkTask: Aborted commit for partition 193 (task 1201, attempt 0, stage 17.0)
+21/09/25 02:08:21 ERROR Utils: Aborting task
+org.apache.spark.executor.CommitDeniedException: Commit denied for partition 194 (task 1202, attempt 0, stage 17.0)
+	at org.apache.spark.sql.execution.datasources.v2.DataWritingSparkTask$.$anonfun$run$1(WriteToDataSourceV2Exec.scala:431)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1473)
+	at org.apache.spark.sql.execution.datasources.v2.DataWritingSparkTask$.run(WriteToDataSourceV2Exec.scala:452)
+	at org.apache.spark.sql.execution.datasources.v2.V2TableWriteExec.$anonfun$writeWithV2$2(WriteToDataSourceV2Exec.scala:360)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:131)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:497)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1439)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:500)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+21/09/25 02:08:21 ERROR DataWritingSparkTask: Aborting commit for partition 194 (task 1202, attempt 0, stage 17.0)
+21/09/25 02:08:21 ERROR DataWritingSparkTask: Aborted commit for partition 194 (task 1202, attempt 0, stage 17.0)
+21/09/25 02:08:21 WARN TaskSetManager: Lost task 192.0 in stage 17.0 (TID 1200) (3790af8b1f92 executor driver): TaskKilled (Stage cancelled)
+21/09/25 02:08:21 ERROR TaskSchedulerImpl: Exception in statusUpdate
+java.util.concurrent.RejectedExecutionException: Task org.apache.spark.scheduler.TaskResultGetter$$Lambda$4196/441960353@55462610 rejected from java.util.concurrent.ThreadPoolExecutor@613bcfea[Shutting down, pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 1198]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2063)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:830)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1379)
+	at org.apache.spark.scheduler.TaskResultGetter.enqueueFailedTask(TaskResultGetter.scala:137)
+	at org.apache.spark.scheduler.TaskSchedulerImpl.liftedTree2$1(TaskSchedulerImpl.scala:771)
+	at org.apache.spark.scheduler.TaskSchedulerImpl.statusUpdate(TaskSchedulerImpl.scala:745)
+	at org.apache.spark.scheduler.local.LocalEndpoint$$anonfun$receive$1.applyOrElse(LocalSchedulerBackend.scala:71)
+	at org.apache.spark.rpc.netty.Inbox.$anonfun$process$1(Inbox.scala:115)
+	at org.apache.spark.rpc.netty.Inbox.safelyCall(Inbox.scala:213)
+	at org.apache.spark.rpc.netty.Inbox.process(Inbox.scala:100)
+	at org.apache.spark.rpc.netty.MessageLoop.org$apache$spark$rpc$netty$MessageLoop$$receiveLoop(MessageLoop.scala:75)
+	at org.apache.spark.rpc.netty.MessageLoop$$anon$1.run(MessageLoop.scala:41)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+21/09/25 02:08:21 ERROR TaskSchedulerImpl: Exception in statusUpdate
+java.util.concurrent.RejectedExecutionException: Task org.apache.spark.scheduler.TaskResultGetter$$Lambda$4196/441960353@1309a551 rejected from java.util.concurrent.ThreadPoolExecutor@613bcfea[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 1198]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2063)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:830)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1379)
+	at org.apache.spark.scheduler.TaskResultGetter.enqueueFailedTask(TaskResultGetter.scala:137)
+	at org.apache.spark.scheduler.TaskSchedulerImpl.liftedTree2$1(TaskSchedulerImpl.scala:771)
+	at org.apache.spark.scheduler.TaskSchedulerImpl.statusUpdate(TaskSchedulerImpl.scala:745)
+	at org.apache.spark.scheduler.local.LocalEndpoint$$anonfun$receive$1.applyOrElse(LocalSchedulerBackend.scala:71)
+	at org.apache.spark.rpc.netty.Inbox.$anonfun$process$1(Inbox.scala:115)
+	at org.apache.spark.rpc.netty.Inbox.safelyCall(Inbox.scala:213)
+	at org.apache.spark.rpc.netty.Inbox.process(Inbox.scala:100)
+	at org.apache.spark.rpc.netty.MessageLoop.org$apache$spark$rpc$netty$MessageLoop$$receiveLoop(MessageLoop.scala:75)
+	at org.apache.spark.rpc.netty.MessageLoop$$anon$1.run(MessageLoop.scala:41)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+21/09/25 02:08:21 WARN TaskSetManager: Lost task 191.0 in stage 17.0 (TID 1199) (3790af8b1f92 executor driver): TaskKilled (Stage cancelled)
+21/09/25 02:08:21 ERROR TaskSchedulerImpl: Exception in statusUpdate
+java.util.concurrent.RejectedExecutionException: Task org.apache.spark.scheduler.TaskResultGetter$$Lambda$4196/441960353@938daf0 rejected from java.util.concurrent.ThreadPoolExecutor@613bcfea[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 1199]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2063)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:830)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1379)
+	at org.apache.spark.scheduler.TaskResultGetter.enqueueFailedTask(TaskResultGetter.scala:137)
+	at org.apache.spark.scheduler.TaskSchedulerImpl.liftedTree2$1(TaskSchedulerImpl.scala:771)
+	at org.apache.spark.scheduler.TaskSchedulerImpl.statusUpdate(TaskSchedulerImpl.scala:745)
+	at org.apache.spark.scheduler.local.LocalEndpoint$$anonfun$receive$1.applyOrElse(LocalSchedulerBackend.scala:71)
+	at org.apache.spark.rpc.netty.Inbox.$anonfun$process$1(Inbox.scala:115)
+	at org.apache.spark.rpc.netty.Inbox.safelyCall(Inbox.scala:213)
+	at org.apache.spark.rpc.netty.Inbox.process(Inbox.scala:100)
+	at org.apache.spark.rpc.netty.MessageLoop.org$apache$spark$rpc$netty$MessageLoop$$receiveLoop(MessageLoop.scala:75)
+	at org.apache.spark.rpc.netty.MessageLoop$$anon$1.run(MessageLoop.scala:41)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+21/09/25 02:08:21 ERROR TaskSchedulerImpl: Exception in statusUpdate
+java.util.concurrent.RejectedExecutionException: Task org.apache.spark.scheduler.TaskResultGetter$$Lambda$4196/441960353@7baad9ce rejected from java.util.concurrent.ThreadPoolExecutor@613bcfea[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 1199]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2063)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:830)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1379)
+	at org.apache.spark.scheduler.TaskResultGetter.enqueueFailedTask(TaskResultGetter.scala:137)
+	at org.apache.spark.scheduler.TaskSchedulerImpl.liftedTree2$1(TaskSchedulerImpl.scala:771)
+	at org.apache.spark.scheduler.TaskSchedulerImpl.statusUpdate(TaskSchedulerImpl.scala:745)
+	at org.apache.spark.scheduler.local.LocalEndpoint$$anonfun$receive$1.applyOrElse(LocalSchedulerBackend.scala:71)
+	at org.apache.spark.rpc.netty.Inbox.$anonfun$process$1(Inbox.scala:115)
+	at org.apache.spark.rpc.netty.Inbox.safelyCall(Inbox.scala:213)
+	at org.apache.spark.rpc.netty.Inbox.process(Inbox.scala:100)
+	at org.apache.spark.rpc.netty.MessageLoop.org$apache$spark$rpc$netty$MessageLoop$$receiveLoop(MessageLoop.scala:75)
+	at org.apache.spark.rpc.netty.MessageLoop$$anon$1.run(MessageLoop.scala:41)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
